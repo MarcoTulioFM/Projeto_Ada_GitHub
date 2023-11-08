@@ -1,0 +1,31 @@
+[
+    {
+        "Titulo": "Conhecendo o Git",
+        "Author" : "Marco Tulio",
+        "Descrição": "Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo"
+    },
+
+    {
+        "Titulo": "Conhecendo o GitHub",
+        "Author" : "Carlos Alexandre",
+        "Descrição": "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo."
+    },
+
+    {
+        "Titulo": "Conhecendo a Aws",
+        "Author" : "Edgar",
+        "Descrição": "Amazon Web Services, também conhecido como AWS, é uma plataforma de serviços de computação em nuvem, que formam uma plataforma de computação na nuvem oferecida pela Amazon.com. Os serviços são oferecidos em várias áreas geográficas distribuídas pelo mundo."
+    },
+
+    {
+        "Titulo": "Conhecendo Html",
+        "Author" : "Gandara",
+        "Descrição": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. "
+    },
+
+    {
+        "Titulo": "Conhecendo CSS",
+        "Author" : "Monique",
+        "Descrição": "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos."
+    }
+]
