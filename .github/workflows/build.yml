@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd gerar_arquivos_html_com-python/
+          cd :Projeto_Ada_GitHub/
           pip install -r requirements.txt
 
       - name: Generate HTML and Read Markdown
