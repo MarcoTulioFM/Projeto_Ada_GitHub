@@ -23,7 +23,9 @@ jobs:
 
       - name: Generate HTML and Read Markdown
         run: |
-          ls
+          cd src/
+          python CriarMarkdown.py
+          python lerMarkdown.py
 
       - name: Commit and push changes
         run: |
