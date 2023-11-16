@@ -28,9 +28,12 @@ jobs:
           python lerMarkdown.py
 
       - name: Commit and push changes
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           git config --global user.email "actions@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git add .
-          git commit -m "Generating Pages for Blog"
-          git push
+          git commit -m "Auto-commit changes"
+          git push https://${ACCESS_TOKEN}@github.com/MarcoTulioFM/Projeto_Ada_GitHub.git HEAD:main
+
