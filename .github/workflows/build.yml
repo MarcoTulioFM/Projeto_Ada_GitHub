@@ -33,4 +33,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Generating Pages for Blog"
-          git push origin main
+          git push
