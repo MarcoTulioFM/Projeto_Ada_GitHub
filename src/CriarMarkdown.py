@@ -1,7 +1,10 @@
 import json
+import os
+
+caminho = os.path.join(os.path.dirname(__file__), 'projeto.json')
 
 # Abrindo e lendo o arquivo JSON
-with open('projeto.json', 'r') as json_file:
+with open(caminho, 'r') as json_file:
     data = json.load(json_file)
 
 # Inicializando o conteúdo do README.md
