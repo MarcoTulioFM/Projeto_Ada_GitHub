@@ -23,6 +23,7 @@ jobs:
           git checkout main
           git checkout develop -- index.html
           cat index.html
+          git add .
           git commit -m "Atualizando index.html"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
