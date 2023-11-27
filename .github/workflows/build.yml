@@ -31,9 +31,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git remote update
           git fetch
-          git add .
-          git commit -m "Auto-commit changes"
-          git push origin main # Push changes to 'main'
+          git branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
