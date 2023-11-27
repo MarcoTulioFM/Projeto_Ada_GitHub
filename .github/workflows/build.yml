@@ -25,7 +25,15 @@ jobs:
           cd src/
           python CriarBlog.py
 
-      
+      - name: Copy index.html to main
+        run: |
+          git checkout main
+          git checkout develop -- index.html
+          git config user.name "GitHub Actions"
+          git config user.email "fonsemarcotulio@gmail.com"
+          git add index.html
+          git commit -m "Copying index.html from develop to main by GitHub Actions"
+          git push origin main
 
 
 
