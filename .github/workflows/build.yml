@@ -25,18 +25,7 @@ jobs:
           cd src/
           python CriarBlog.py
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git checkout main  # Ensure you are on the 'main' branch
-          git add .
-          git commit -m "Auto-commit changes"
-          git pull origin main  # Fetch and merge remote changes
-          # Resolve conflicts if any
-          git push origin main  # Push your changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
 
 
 
