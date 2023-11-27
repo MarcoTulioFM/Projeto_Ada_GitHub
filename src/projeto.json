@@ -1,31 +1,38 @@
 [
     {
-        "Titulo": "Conhecendo o Git",
+        "Titulo": "Comecando o Github e arquivo python",
         "Author" : "Marco Tulio",
-        "Descrição": "Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo"
+        "Descrição": "Começamos Criando o Repositorio no GitHub e adicionando todos os colaboradores ao repostiorio."
     },
 
     {
-        "Titulo": "Conhecendo o GitHub",
+        "Titulo": "Criando a Wiki",
         "Author" : "Carlos Alexandre",
-        "Descrição": "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo."
+        "Descrição": "Em seguida, desenvolvemos a wiki, uma fonte central de informações detalhadas sobre o projeto. Nela, abordamos desde a estrutura do projeto até orientações detalhadas de uso, melhores práticas, guias passo a passo e informações vitais para os colaboradores. "
     },
 
     {
-        "Titulo": "Conhecendo a Aws",
+        "Titulo": "Arquivo JSON",
         "Author" : "Edgar",
-        "Descrição": "Amazon Web Services, também conhecido como AWS, é uma plataforma de serviços de computação em nuvem, que formam uma plataforma de computação na nuvem oferecida pela Amazon.com. Os serviços são oferecidos em várias áreas geográficas distribuídas pelo mundo."
+        "Descrição": "Criamos o arquivo que ira gerar o conteudo da pagina HTML onde contem titulo, author e descrição de cada page do projeto"
     },
 
     {
-        "Titulo": "Conhecendo Html",
-        "Author" : "Gandara",
-        "Descrição": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. "
+        "Titulo": "Arquivo Python",
+        "Author" : "Marco Tulio",
+        "Descrição": "Arquivo que ira ler o arquivo json e gera uma pagina html com os dados do arquivo json"
     },
 
     {
-        "Titulo": "Conhecendo CSS",
-        "Author" : "Monique",
-        "Descrição": "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos."
+        "Titulo": "CSS",
+        "Author" : "Monique e Gandara",
+        "Descrição": "Estilização do arquivo HTML para deixar o conteudo do blog mais Bonito e Estiloso"
+    },
+
+    {
+        "Titulo": "GitHub Actions",
+        "Author" : "Monique, Gandara, Marco Tulio, Carlos Alexandre, Edgar",
+        "Descrição": "Por ultimos criamos os actions que serão acionandos quando ocorrer um push na branch develop que ira executar o arquivo python gerando assim o html e mandando esse html para branch main onde possui um action que ira mandar o index.html para o github pages gerando um dominio que pode ser acessado de qualquer lugar"
     }
+
 ]
