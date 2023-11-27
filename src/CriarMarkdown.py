@@ -1,21 +1,43 @@
+from jinja2 import Template
 import json
-import os
 
-caminho = os.path.join(os.path.dirname(__file__), 'projeto.json')
-
-# Abrindo e lendo o arquivo JSON
-with open(caminho, 'r') as json_file:
+# Carregando os dados do arquivo JSON
+with open('projeto.json', 'r') as json_file:
     data = json.load(json_file)
 
-# Inicializando o conteúdo do README.md
-readme_content = "# Conteúdo\n\n"
+# O template HTML
+template_html = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Versionamento e GitHub</title>
+    <!-- Incluindo estilo gerado pelo Python -->
+</head>
+<body>
+    <h1>Conteúdo</h1>
+    {% for item in data %}
+    <h2>{{ item['Titulo'] }}</h2>
+    <ul>
+        <li><strong>Autor</strong>: {{ item['Author'] }}</li>
+        <li><strong>Descrição</strong>: {{ item['Descrição'] }}</li>
+    </ul>
+    {% endfor %}
+    <img src="./assets/all.png">
+</body>
+</html>
+'''
 
-# Iterando sobre os itens no arquivo JSON
-for item in data:
-    readme_content += f"## {item['Titulo']}\n\n"
-    readme_content += f"- **Autor**: {item['Author']}\n"
-    readme_content += f"- **Descrição**: {item['Descrição']}\n\n"
+# Carregando o template
+template = Template(template_html)
 
-# Escrevendo no arquivo README.md
-with open('README.md', 'w') as readme_file:
-    readme_file.write(readme_content)
+# Renderizando o template com os dados do JSON
+rendered_html = template.render(data=data)
+
+# Escrevendo o HTML renderizado em um arquivo
+with open('index.html', 'w') as file:
+    file.write(rendered_html)
+
+print("Arquivo HTML gerado com sucesso!")
