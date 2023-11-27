@@ -27,12 +27,12 @@
         "Titulo": "CSS",
         "Author" : "Monique e Gandara",
         "Descrição": "Estilização do arquivo HTML para deixar o conteudo do blog mais Bonito e Estiloso"
-    }
+    },
 
     {
         "Titulo": "GitHub Actions",
         "Author" : "Monique, Gandara, Marco Tulio, Carlos Alexandre, Edgar",
         "Descrição": "Por ultimos criamos os actions que serão acionandos quando ocorrer um push na branch develop que ira executar o arquivo python gerando assim o html e mandando esse html para branch main onde possui um action que ira mandar o index.html para o github pages gerando um dominio que pode ser acessado de qualquer lugar"
     }
-    
+
 ]
