@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install jinja2
-        
+
       - name: Generate HTML and Read Markdown
         run: |
           cd src/
@@ -31,5 +31,8 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Auto-commit changes"
-          git push -b main 
+          git push origin develop:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
