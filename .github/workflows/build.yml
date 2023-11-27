@@ -22,6 +22,8 @@ jobs:
           git fetch
           git checkout main
           git branch
+          ls .github/workflows
+          git merge develop
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
