@@ -51,7 +51,6 @@ jobs:
           git remote update
           git fetch
           git pull
-          git add index.html
           git commit -m "Enviando index para branch main"
           git push origin main
         env:
