@@ -50,9 +50,9 @@ jobs:
         run: |
           git remote update
           git fetch
-          git pull
-          git commit -m "Enviando index para branch main"
-          git push origin main
+          git add .
+          git commit -m "Atualizando index.html"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
