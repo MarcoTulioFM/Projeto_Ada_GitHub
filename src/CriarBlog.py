@@ -37,7 +37,7 @@ template = Template(template_html)
 rendered_html = template.render(data=data)
 
 # Escrevendo o HTML renderizado em um arquivo
-with open('index.html', 'w') as file:
+with open('../index.html', 'w') as file:
     file.write(rendered_html)
 
 print("Arquivo HTML gerado com sucesso!")
