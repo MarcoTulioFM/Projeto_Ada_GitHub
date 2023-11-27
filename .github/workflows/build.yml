@@ -50,8 +50,6 @@ jobs:
         run: |
           git remote update
           git fetch 
-          git checkout main
-          git pull origin develop  # Garante que estamos atualizados com a branch develop
           git add index.html  # Supondo que index.html é o arquivo gerado
           git commit -m "Update index.html from develop branch"
           git push origin main
