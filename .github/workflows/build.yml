@@ -21,9 +21,9 @@ jobs:
           git remote update
           git fetch
           git checkout main
-          git branch
-          ls .github/workflows
-          git merge develop
+          git checkout develop -- index.html
+          cat index.html
+          git commit -m "Atualizando index.html"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
