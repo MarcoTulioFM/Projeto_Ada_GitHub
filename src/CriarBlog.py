@@ -2,7 +2,7 @@ from jinja2 import Template
 import json
 
 # Carregando os dados do arquivo JSON
-with open('./projeto.json', 'r') as json_file:
+with open('projeto.json', 'r') as json_file:
     data = json.load(json_file)
 
 # O template HTML
