@@ -20,20 +20,20 @@ jobs:
       - name: Install dependencies
         run: pip install jinja2
 
-      - name: Clone
-        run: |
-          git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git clone --mirror git@github.com:MarcoTulioFM/Projeto_Ada_GitHub.git
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Generate HTML and Read Markdown
         run: |
           cd src/
           python CriarBlog.py
-      
 
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m "Auto-commit changes"
+          git push # Push changes to 'main'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 
