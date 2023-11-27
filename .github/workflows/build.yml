@@ -51,12 +51,9 @@ jobs:
           git remote update
           git fetch
           git pull
-          git checkout main
-          git checkout develop -- index.html
-          cat index.html
-          git add .
-          git commit -m "Atualizando index.html"
-          git push
+          git add index.html
+          git commit -m "Enviando index para branch main"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
