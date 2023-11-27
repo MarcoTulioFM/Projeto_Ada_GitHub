@@ -25,6 +25,7 @@ jobs:
           cat index.html
           git add .
           git commit -m "Atualizando index.html"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
