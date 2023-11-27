@@ -18,6 +18,8 @@ jobs:
 
       - name: Push changes to main
         run: |
+          git remote update
+          git fetch
           git checkout main
           git branch
         env:
